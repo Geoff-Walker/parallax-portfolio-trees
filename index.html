@@ -20,7 +20,7 @@
        window.addEventListener('scroll', function () {
            var value = window.scrollY;
 
-           moon.style.left = value * 'px';
+           moon.style.top = value * 0.5 + 'px';
 
        })
 
@@ -34,7 +34,9 @@
 <body>
     <main>
         <div class="night-sky" id="home_bg">
-            <div class="img-moon para-moon" id="moon">
+
+            
+           <div class="img-moon para-moon" id="moon">
             </div>
 
             <div class="img-mountain para-mountain" id="mountain">
