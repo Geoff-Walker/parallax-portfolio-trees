@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Parallax Trees | Portfolio Project</title>
+
+   <script type="text/javascript">
+       let bg = document.getElementById("home-bg");
+       let moon = document.getElementById("moon");
+       let mountain = document.getElementById("mountain");
+       let hills = document.getElementById("hills");
+       let river = document.getElementById("river");
+       let cliffleft = document.getElementById("cliff-left");
+       let cliffright = document.getElementById("cliff-right");
+
+       window.addEventListener('scroll', function () {
+           var value = window.scrollY;
+
+           moon.style.left = value * 'px';
+
+       })
+
+
+
+
+
+   </script>
+
+</head>
+<body>
+    <main>
+        <div class="night-sky" id="home_bg">
+            <div class="img-moon para-moon" id="moon">
+            </div>
+
+            <div class="img-mountain para-mountain" id="mountain">
+
+            </div>
+
+
+            <div class="img-hills para-hills" id="hills">
+
+            </div>
+
+
+
+            <div class="img-river para-river" id="river">
+
+            </div>
+
+            <div class="img-cliff-left para-cliff-left" id="cliff-left">
+
+            </div>
+
+            <div class="img-cliff-right para-cliff-right" id="cliff-right">
+
+            </div>
+
+        </div>
+
+
+      
+        <!--  <img src="img/owl.svg" alt="Owl" class="img-owl para-owl" />
+      <img src="img/bat.svg" alt="Bat" class="img-bat para-bat" />-->
+
+   
+
+        <div class="tree">
+            <img src="img/tree.svg" alt="Tree" class="img-tree img-tree-1 para-tree" />
+            <img src="img/tree.svg" alt="Tree" class="img-tree img-tree-2 para-tree" />
+            <img src="img/tree.svg" alt="Tree" class="img-tree img-tree-3 para-tree" />
+            <img src="img/tree.svg" alt="Tree" class="img-tree img-tree-4 para-tree" />
+            <img src="img/tree.svg" alt="Tree" class="img-tree img-tree-5 para-tree" />
+
+        </div>
+
+        <div class="section__cta">
+            <h1 class="buynow">buynow</h1>
+        </div>
+
+    </main>
+
+
+
+</body>
+</html>
