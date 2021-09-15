@@ -12,7 +12,7 @@
 </head>
 <body>
     <main>
-        <div class="night-sky" id="home_bg">
+        <div class="night-sky" id="home-bg">
 
             
            <div class="img-moon para-moon" id="moon">
@@ -65,35 +65,7 @@
 
     </main>
 
-    <script type="text/javascript">
-        
-        let scrollIndex = 0;
-        
-        let bg = document.getElementById("home-bg");
-        let moon = document.querySelector(".img-moon");
-        let mountain = document.getElementById("mountain");
-        let hills = document.getElementById("hills");
-        let river = document.getElementById("river");
-        let cliffleft = document.getElementById("cliff-left");
-        let cliffright = document.getElementById("cliff-right");
-        let moon = document.querySelector(".img-moon");
-
-        function movePostiion(scrollY) {
-            moon.style.top = 200 - window.scrollY;
- 
-        }
-        
-        document.addEventListener('scroll', function(e) {
-            scrollIndex = window.scrollY;
-            console.log(scrollIndex);
-        }  );
-       
-        
-        
-        
-        
- 
-    </script>
+    <script type="text/javascript" src=script.js></script>
 
 </body>
 </html>

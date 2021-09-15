@@ -2,15 +2,12 @@
 	padding: 0;
 	border: 0;
 	margin: 0;
+	scroll-behavior: smooth;
 }
-/*
+
 body {
-    background-image: url(img/night-sky.jpg);
-    background-repeat: no-repeat;
-    background-size: 200%;
-   
-    
-}*/
+	position: relative;
+}
 
 .night-sky {
 	background-image: url(img/night-sky.jpg);
@@ -19,13 +16,13 @@ body {
 	width: 100vw;
 	background-size: 200%;
 	background-position: center;
-	position: relative;
+	position: absolute;
 }
 
 .img-moon {
 	width: 200px;
 	height: 200px;
-	position: absolute;
+	position: sticky;
 	top: 200px;
 	left: 200px;
 	background-image: url(img/moon.svg);
