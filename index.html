@@ -8,27 +8,6 @@
     <link rel="stylesheet" href="style.css" />
     <title>Parallax Trees | Portfolio Project</title>
 
-   <script type="text/javascript">
-       let bg = document.getElementById("home-bg");
-       let moon = document.getElementById("moon");
-       let mountain = document.getElementById("mountain");
-       let hills = document.getElementById("hills");
-       let river = document.getElementById("river");
-       let cliffleft = document.getElementById("cliff-left");
-       let cliffright = document.getElementById("cliff-right");
-
-       window.addEventListener('scroll', function () {
-           var value = window.scrollY;
-
-           moon.style.top = value * 0.5 + 'px';
-
-       })
-
-
-
-
-
-   </script>
 
 </head>
 <body>
@@ -86,7 +65,35 @@
 
     </main>
 
+    <script type="text/javascript">
+        
+        let scrollIndex = 0;
+        
+        let bg = document.getElementById("home-bg");
+        let moon = document.querySelector(".img-moon");
+        let mountain = document.getElementById("mountain");
+        let hills = document.getElementById("hills");
+        let river = document.getElementById("river");
+        let cliffleft = document.getElementById("cliff-left");
+        let cliffright = document.getElementById("cliff-right");
+        let moon = document.querySelector(".img-moon");
 
+        function movePostiion(scrollY) {
+            moon.style.top = 200 - window.scrollY;
+ 
+        }
+        
+        document.addEventListener('scroll', function(e) {
+            scrollIndex = window.scrollY;
+            console.log(scrollIndex);
+        }  );
+       
+        
+        
+        
+        
+ 
+    </script>
 
 </body>
 </html>

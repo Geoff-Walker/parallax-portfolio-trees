@@ -1,185 +1,214 @@
 * {
-    padding: 0;
-    border: 0;
-    margin:0;
+	padding: 0;
+	border: 0;
+	margin: 0;
 }
-
+/*
 body {
-    /*background-image: url(img/night-sky.jpg);
-    background-repeat: no-repeat;
-    background-size: 200%;*/
-   
-    
-}
-
-.night-sky {
     background-image: url(img/night-sky.jpg);
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
     background-size: 200%;
-    background-position: center;
-    position: relative;
+   
     
-    
-    
+}*/
+
+.night-sky {
+	background-image: url(img/night-sky.jpg);
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+	background-size: 200%;
+	background-position: center;
+	position: relative;
 }
 
 .img-moon {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 200px;
-    left: 200px;
-    background-image: url(img/moon.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	background-image: url(img/moon.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .img-mountain {
-    position: absolute;
-    top: 500px;
-    width: 100%;
-    height: 100%;
-    background-image: url(img/mountain.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+	position: absolute;
+	top: 500px;
+	width: 100%;
+	height: 100%;
+	background-image: url(img/mountain.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .img-hills {
-    position: absolute;
-    top: 900px;
-    left: -20px;
-    width: 110%;
-    height: 100%;
-    background-image: url(img/hills.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+	position: absolute;
+	top: 900px;
+	left: -20px;
+	width: 110%;
+	height: 100%;
+	background-image: url(img/hills.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
-
-
 .img-river {
-    position: absolute;
-    top: 1140px;
-    left: -20px;
-    width: 100%; 
-    height: 100%;
-    background-image: url(img/river.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+	position: absolute;
+	top: 1140px;
+	left: -20px;
+	width: 100%;
+	height: 100%;
+	background-image: url(img/river.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .img-cliff-left {
-    height: 175%;
-    width: 100%;
-    position: absolute;
-    top: 1475px;
-    left: -10px;
-    background-image: url(img/cliff-left.svg);
-    background-repeat: no-repeat;
-    background-size: 60%;
+	height: 175%;
+	width: 100%;
+	position: absolute;
+	top: 1475px;
+	left: -10px;
+	background-image: url(img/cliff-left.svg);
+	background-repeat: no-repeat;
+	background-size: 60%;
 }
 
 .img-cliff-right {
-    height: 150%;
-    width: 100%;
-    position: absolute;
-    top: 1700px;
-    right: -380px;
-    background-image: url(img/cliff-right.svg);
-    background-repeat: no-repeat;
-    background-size: 80%;
+	height: 150%;
+	width: 100%;
+	position: absolute;
+	top: 1700px;
+	right: -380px;
+	background-image: url(img/cliff-right.svg);
+	background-repeat: no-repeat;
+	background-size: 80%;
 }
 
 .img-tree-1 {
-    height: 120%;
-    width: 100%;
-    position: absolute;
-    z-index: 100;
-    display: block;
-    top: -200px;
+	height: 120%;
+	width: 100%;
+	position: absolute;
+	z-index: 100;
+	display: block;
+	top: -200px;
 }
 
-
 .img-tree-2 {
-    height: 120%;
-    width: 100%;
-    position: absolute;
-    z-index: 100;
-    display: block;
-    top: -210px;
-    left: -40%;
+	height: 120%;
+	width: 100%;
+	position: absolute;
+	z-index: 100;
+	display: block;
+	top: -210px;
+	left: -40%;
 }
 
 .img-tree-3 {
-    height: 120%;
-    width: 100%;
-    position: absolute;
-    z-index: 100;
-    display: block;
-    top: -220px;
-    right: -40%;
+	height: 120%;
+	width: 100%;
+	position: absolute;
+	z-index: 100;
+	display: block;
+	top: -220px;
+	right: -40%;
 }
 
 .img-tree-4 {
-    height: 105%;
-    width: 105%;
-    position: absolute;
-    z-index: 90;
-    display: block;
-    top: -60px;
-    left: -20%;
-    opacity: 95%
+	height: 105%;
+	width: 105%;
+	position: absolute;
+	z-index: 90;
+	display: block;
+	top: -60px;
+	left: -20%;
+	opacity: 95%;
 }
 
 .img-tree-5 {
-    height: 105%;
-    width: 105%;
-    position: absolute;
-    z-index: 90;
-    display: block;
-    top: -60px;
-    left: 20%;
-    opacity: 95%
+	height: 105%;
+	width: 105%;
+	position: absolute;
+	z-index: 90;
+	display: block;
+	top: -60px;
+	left: 20%;
+	opacity: 95%;
 }
 
 .tree {
-    background-image: url(img/tree-floor.jpg);
-    height: 200vh;
-    width: 100%;
-    position: absolute;
-    top: 3100px;
-    z-index: 50;
-    background-size: 200%;
-    background-position: center;
+	background-image: url(img/tree-floor.jpg);
+	height: 200vh;
+	width: 100%;
+	position: absolute;
+	top: 3100px;
+	z-index: 80;
+	background-size: 200%;
+	background-position: center;
 }
 
 .tree::before {
-    content:'';
-    display: block;
-    height: 200px;
-    width: 100%;
-    background-image: linear-gradient(to bottom, rgba(0,0,0, .95), rgba(0, 0, 0, 0.2));
-
+	content: '';
+	position: relative;
+	display: block;
+	height: 200px;
+	width: 100%;
+	background-image: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.9),
+		rgba(0, 0, 0, 1),
+		rgba(0, 0, 0, 0.9),
+		rgba(0, 0, 0, 0.5)
+	);
+	top: -100px;
+	filter: blur(10px);
 }
 
-
-
+.tree::after {
+	content: '';
+	position: relative;
+	display: block;
+	height: 200px;
+	width: 100%;
+	background-image: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.9),
+		rgba(0, 0, 0, 1),
+		rgba(0, 0, 0, 0.9),
+		rgba(0, 0, 0, 0.5)
+	);
+	top: 1600px;
+	filter: blur(10px);
+}
 
 .section__cta {
-    background-image: linear-gradient(to bottom, rgba(0,0,0, .95), rgba(0, 0, 0, 0.5)), url(img/grass.jpg);
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    top: 5000px;
-    z-index: 49;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.5)), url(img/grass.jpg);
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: 5000px;
+	z-index: 49;
 }
 
-    .section__cta::before {
-        content: '';
-        display: block;
-        height: 200px;
-        width: 100%;
-        background-image: linear-gradient(to bottom, rgba(0,0,0, 0.9), rgba(0, 0, 0, 0.1));
-    }
+.section__cta::before {
+	content: '';
+	display: block;
+	height: 200px;
+	width: 100%;
+	background-image: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.9),
+		rgba(0, 0, 0, 1),
+		rgba(0, 0, 0, 0.9),
+		rgba(0, 0, 0, 0.5)
+	);
+
+	filter: blur(10px);
+	position: absolute;
+	z-index: 60;
+}
