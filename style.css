@@ -16,14 +16,14 @@ body {
 	width: 100vw;
 	background-size: 200%;
 	background-position: center;
-	position: absolute;
+	position: fixed;
 }
 
 .img-moon {
 	width: 200px;
 	height: 200px;
-	position: sticky;
-	top: 200px;
+	position: fixed;
+	top: 50px;
 	left: 200px;
 	background-image: url(img/moon.svg);
 	background-repeat: no-repeat;
@@ -54,7 +54,7 @@ body {
 .img-river {
 	position: absolute;
 	top: 1140px;
-	left: -20px;
+	left: 0px;
 	width: 100%;
 	height: 100%;
 	background-image: url(img/river.svg);
@@ -140,7 +140,7 @@ body {
 	height: 200vh;
 	width: 100%;
 	position: absolute;
-	top: 3100px;
+	top: 4000px;
 	z-index: 80;
 	background-size: 200%;
 	background-position: center;
@@ -187,7 +187,7 @@ body {
 	height: 100vh;
 	width: 100%;
 	position: absolute;
-	top: 5000px;
+	top: 5900px;
 	z-index: 49;
 }
 

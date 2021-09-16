@@ -16,17 +16,19 @@ window.addEventListener('scroll', (e) => {
 	movemountain(scrollIndex);
 	movehills(scrollIndex);
 	moveriver(scrollIndex);
+	movecliffL(scrollIndex);
+	movecliffR(scrollIndex);
 });
 
 function movebg(scrollIndex) {
 	let start = 0;
-	let position = start - scrollIndex / 10;
+	let position = start + scrollIndex / 10;
 
 	if (scrollIndex <= 230) {
 		bg.style.top = `${position}px`;
 		bg.style.position = 'absolute';
 	} else if (scrollIndex > 230) {
-		bg.style.top = '-40px';
+		bg.style.top = '0px';
 		bg.style.position = 'fixed';
 	}
 
@@ -35,33 +37,22 @@ function movebg(scrollIndex) {
 }
 
 function movemoon(scrollIndex) {
-	let start = 200;
-	let position = start + scrollIndex;
+	let start = 0;
+	let position = start + scrollIndex / 20;
 
-	if (scrollIndex > 200) {
-		moon.style.position = 'fixed';
-		moon.style.top = '50px';
-	} else if (scrollIndex <= 200) {
-		moon.style.top = `${position}px`;
-		moon.style.position = 'absolute';
-	}
-
-	console.log(moon.style.top);
+	moon.style.transform = `rotate(${position}deg)`;
 }
 
 function movemountain(scrollIndex) {
 	let start = 500;
 	let position = start - scrollIndex;
 
-	if (scrollIndex > 200) {
+	if (scrollIndex > 450) {
 		mountain.style.position = 'fixed';
 		mountain.style.top = '50px';
-	} else if (scrollIndex <= 200) {
+	} else if (scrollIndex <= 450) {
 		mountain.style.top = `${position}px`;
 	}
-
-	// console.log(mountain.style.top);
-	// console.log(scrollIndex);
 }
 
 function movehills(scrollIndex) {
@@ -74,9 +65,6 @@ function movehills(scrollIndex) {
 	} else if (scrollIndex <= 700) {
 		hills.style.top = `${position}px`;
 	}
-
-	// console.log(mountain.style.top);
-	// console.log(scrollIndex);
 }
 
 function moveriver(scrollIndex) {
@@ -85,17 +73,14 @@ function moveriver(scrollIndex) {
 
 	if (scrollIndex > 1100) {
 		river.style.position = 'fixed';
-		river.style.top = '50px';
+		river.style.top = '0px';
 	} else if (scrollIndex <= 1100) {
 		river.style.top = `${position}px`;
 	}
-
-	// console.log(river.style.top);
-	// console.log(scrollIndex);
 }
 
 function movecliffL(scrollIndex) {
-	let start = 1475;
+	let start = 2000;
 	let position = start - scrollIndex;
 
 	if (scrollIndex > 1800) {
@@ -104,22 +89,16 @@ function movecliffL(scrollIndex) {
 	} else if (scrollIndex <= 1800) {
 		cliffleft.style.top = `${position}px`;
 	}
-
-	console.log(cliffleft.style.top);
-	console.log(scrollIndex);
 }
 
 function movecliffR(scrollIndex) {
-	let start = 1700;
+	let start = 2500;
 	let position = start - scrollIndex;
 
-	if (scrollIndex > 2000) {
+	if (scrollIndex > 2500) {
 		cliffright.style.position = 'fixed';
 		cliffright.style.top = '50px';
-	} else if (scrollIndex <= 2000) {
+	} else if (scrollIndex <= 2500) {
 		cliffright.style.top = `${position}px`;
 	}
-
-	console.log(cliffright.style.top);
-	console.log(scrollIndex);
 }
