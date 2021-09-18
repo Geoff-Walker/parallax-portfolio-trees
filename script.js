@@ -7,7 +7,10 @@ let hills = document.getElementById('hills');
 let river = document.getElementById('river');
 let cliffleft = document.getElementById('cliff-left');
 let cliffright = document.getElementById('cliff-right');
-console.log(cliffright);
+let bat1 = document.querySelector('.bat1');
+let bat2 = document.querySelector('.bat2');
+let bat3 = document.querySelector('.bat3');
+let help = document.querySelector('.help');
 
 window.addEventListener('scroll', (e) => {
 	scrollIndex = window.scrollY;
@@ -18,22 +21,26 @@ window.addEventListener('scroll', (e) => {
 	moveriver(scrollIndex);
 	movecliffL(scrollIndex);
 	movecliffR(scrollIndex);
+	movebat1(scrollIndex);
+	movebat2(scrollIndex);
+	movebat3(scrollIndex);
+	movehelp(scrollIndex);
 });
 
 function movebg(scrollIndex) {
 	let start = 0;
 	let position = start + scrollIndex / 10;
 
-	if (scrollIndex <= 230) {
-		bg.style.top = `${position}px`;
+	if (scrollIndex <= 750) {
+		// bg.style.top = `${position}px`;
 		bg.style.position = 'absolute';
-	} else if (scrollIndex > 230) {
-		bg.style.top = '0px';
+	} else if (scrollIndex > 750) {
+		// bg.style.top = '-20px';
 		bg.style.position = 'fixed';
 	}
 
-	// console.log(bg.style.top);
-	// console.log(scrollIndex);
+	console.log(bg.style.top);
+	console.log(scrollIndex);
 }
 
 function movemoon(scrollIndex) {
@@ -41,6 +48,27 @@ function movemoon(scrollIndex) {
 	let position = start + scrollIndex / 20;
 
 	moon.style.transform = `rotate(${position}deg)`;
+}
+
+function movebat1(scrollIndex) {
+	let start = 1075;
+	let position = start + scrollIndex * 6;
+
+	bat1.style.right = `${position}px`;
+}
+
+function movebat2(scrollIndex) {
+	let start = 1000;
+	let position = start + scrollIndex * 4;
+
+	bat2.style.right = `${position}px`;
+}
+
+function movebat3(scrollIndex) {
+	let start = 909;
+	let position = start + scrollIndex * 5;
+
+	bat3.style.right = `${position}px`;
 }
 
 function movemountain(scrollIndex) {
@@ -55,8 +83,22 @@ function movemountain(scrollIndex) {
 	}
 }
 
+function movehelp(scrollIndex) {
+	let start = 750;
+	let position = start - scrollIndex;
+
+	if (scrollIndex < 350) {
+		help.style.top = `${position}px`;
+	} else {
+		help.style.position = 'fixed';
+		help.style.top = '350px';
+	}
+	console.log(help.style.top);
+	console.log(scrollIndex);
+}
+
 function movehills(scrollIndex) {
-	let start = 900;
+	let start = 850;
 	let position = start - scrollIndex * 1.1;
 
 	if (scrollIndex > 700) {
@@ -69,14 +111,17 @@ function movehills(scrollIndex) {
 
 function moveriver(scrollIndex) {
 	let start = 1140;
-	let position = start - scrollIndex;
+	let position = start - scrollIndex * 0.8;
 
-	if (scrollIndex > 1100) {
+	if (scrollIndex > 1200) {
 		river.style.position = 'fixed';
 		river.style.top = '0px';
-	} else if (scrollIndex <= 1100) {
+	} else if (scrollIndex <= 1200) {
 		river.style.top = `${position}px`;
 	}
+
+	// console.log(river.style.top);
+	// console.log(scrollIndex);
 }
 
 function movecliffL(scrollIndex) {
