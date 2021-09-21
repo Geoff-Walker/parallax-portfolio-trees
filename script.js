@@ -29,18 +29,9 @@ window.addEventListener('scroll', (e) => {
 
 function movebg(scrollIndex) {
 	let start = 0;
-	let position = start + scrollIndex / 10;
+	let position = start + scrollIndex / 20;
 
-	if (scrollIndex <= 750) {
-		// bg.style.top = `${position}px`;
-		bg.style.position = 'absolute';
-	} else if (scrollIndex > 750) {
-		// bg.style.top = '-20px';
-		bg.style.position = 'fixed';
-	}
-
-	console.log(bg.style.top);
-	console.log(scrollIndex);
+	bg.style.transform = `rotate(${position}deg)`;
 }
 
 function movemoon(scrollIndex) {
@@ -51,22 +42,22 @@ function movemoon(scrollIndex) {
 }
 
 function movebat1(scrollIndex) {
-	let start = 1075;
-	let position = start + scrollIndex * 6;
+	let start = 575;
+	let position = start + scrollIndex * 3;
 
 	bat1.style.right = `${position}px`;
 }
 
 function movebat2(scrollIndex) {
-	let start = 1000;
-	let position = start + scrollIndex * 4;
+	let start = 700;
+	let position = start + scrollIndex * 2;
 
 	bat2.style.right = `${position}px`;
 }
 
 function movebat3(scrollIndex) {
-	let start = 909;
-	let position = start + scrollIndex * 5;
+	let start = 359;
+	let position = start + scrollIndex * 2.5;
 
 	bat3.style.right = `${position}px`;
 }
@@ -75,16 +66,16 @@ function movemountain(scrollIndex) {
 	let start = 500;
 	let position = start - scrollIndex;
 
-	if (scrollIndex > 450) {
+	if (scrollIndex > 430) {
 		mountain.style.position = 'fixed';
-		mountain.style.top = '50px';
-	} else if (scrollIndex <= 450) {
+		mountain.style.top = '70px';
+	} else if (scrollIndex <= 430) {
 		mountain.style.top = `${position}px`;
 	}
 }
 
 function movehelp(scrollIndex) {
-	let start = 750;
+	let start = 800;
 	let position = start - scrollIndex;
 
 	if (scrollIndex < 350) {
@@ -98,7 +89,7 @@ function movehelp(scrollIndex) {
 }
 
 function movehills(scrollIndex) {
-	let start = 850;
+	let start = 1000;
 	let position = start - scrollIndex * 1.1;
 
 	if (scrollIndex > 700) {
